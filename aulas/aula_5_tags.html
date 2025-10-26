@@ -1,0 +1,58 @@
+<!--
+    - h1 até h6 são titulos
+    - p tag de paragrafo
+    - span container generico display inline
+    - div container generico display block
+    - b negrito
+    - strong enfase em texto (semantica)
+    - sub desce alguma coisa como representar H2O
+    - sup eleva alguma coisa como 2 elevado a algum numero
+    - a tag de link, com atributo href com sua url e o target que é 
+        o modo de abertura por exemplo _black abre em outra aba
+    - img tag de imagem, com atributo src que é o caminho e atributo alt, que um 
+        texto alternativo caso a imagem esteja indisponviel
+    - small deixa o texto pequeno
+    - i italico
+    - em dar enfase em um texto (semantico)
+    - del remove um texto, deixa ele com um risco (semantico)
+    - s remove um texto, deixa um risco
+    - ins insere um texto (semantica)
+    - u underline, underscore
+    - q citação, atributo cite, com a url do site onde tem a citação, 
+        o texto fica com aspas
+    - blockquote bloco de citação, mesmo atributo cite
+    - code tag para inserir um codigo, deixa o texto com fonte monospace
+    - pre tag de formatação de codigo/texto
+    - br quebra de linha
+    - hr linha horizontal
+--> 
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>teste</title>
+</head>
+<body>
+    <h1>titulo principal</h1>
+    <h2>subtitulo</h2>
+    <p>paragrafo 1</p>
+    <p>paragrafo 2 h<sub>2</sub>o elevado  2<sup>2</sup></p>
+    <p>Lorem ipsum dolor sit amet <small>pequeno </small>consectetur, <q cite="link">citação</q>adipisicing <u>underline</u> elit. Adipisci totam culpa <I>italico </I>hic expedita eaque nisi magni quibusdam numquam molestiae. Magni nulla ipsum omnis similique eligendi veniam at maiores beatae aperiam?</p>
+    <br>
+    <hr>
+    <img src="caminho" height="50px" width="50px" alt="texto alternativo">
+    <a href="link" target="_blank">link clique</a>
+    <pre><code>
+    def main(t: str) -> int
+        try:
+            int(t)
+            if t < 0:
+                return 20
+        except Exception as error
+            raise error
+    </code>
+    </pre>
+</body>
+</html>
