@@ -1,0 +1,61 @@
+<!--
+    antigamente tudo era organizado com divs e spans.
+    mas com o html5 vieram novas tags que são semanticas, e a vantagem de
+    se ultiliza-las são acessibilidade, melhor busca do site pelos navegadores
+    e entendimento geral.
+
+    tags semanticas:
+        - address tag de endereço
+        - article tag comentarios
+        - aside texto em caixa
+        - footer rodapé
+        - header cabeçalho
+        - main conteudo principal (apenas 1 main na pagina)
+        - nav barra de navegação
+        - section uma seção do site 
+-->
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>semantica</title>
+</head>
+<body>
+    <main>
+        <header>
+            <h1>MEU SITE</h1>
+        </header>
+        <aside>
+            <nav>
+                <ul>
+                    <li>home</li>
+                    <li>sobre</li>
+                </ul>
+            </nav>
+        </aside>
+        <section>
+            <header>
+                <h2>seção 1</h2>
+            </header>
+            <article>
+                <h3>subtitulo</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque placeat distinctio iste hic, fugit tenetur? Tenetur eaque optio voluptates, blanditiis repellendus aliquam. Praesentium officiis ratione repellat adipisci odit corrupti nisi!</p>
+            </article>
+            <article>
+                <h3>subtitulo</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque placeat distinctio iste hic, fugit tenetur? Tenetur eaque optio voluptates, blanditiis repellendus aliquam. Praesentium officiis ratione repellat adipisci odit corrupti nisi!</p>
+            </article>
+            <article>
+                <h3>subtitulo</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque placeat distinctio iste hic, fugit tenetur? Tenetur eaque optio voluptates, blanditiis repellendus aliquam. Praesentium officiis ratione repellat adipisci odit corrupti nisi!</p>
+            </article>
+        </section>
+        <footer>
+            rodapé
+            endereço: <address>rua tal fulano tal</address>
+        </footer>
+    </main>
+</body>
+</html>
