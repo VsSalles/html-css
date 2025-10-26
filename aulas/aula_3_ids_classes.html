@@ -1,0 +1,35 @@
+<!--
+
+    - id é unico por elemento
+    - a mesma classe pode ser aplicada em varios elementos e uma classe pode ter duas classes
+        separada por espaço 
+    - no css o ID é um dos mais especificos então para sobrescrevelo apenas com outro id
+        se caso o mesmo elemento tenha css diferente, o ultimo é aplicado.
+-->
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>teste</title>
+    <style>
+        h1 {
+            background-color: blue;
+        }
+        #title-secondary {
+            background-color: purple;
+        }
+
+        .titles {
+            font-weight: bold;
+        }
+        
+
+    </style>
+</head>
+<body>
+    <h1 id=title-main class="titles background-blue">title principal</h1> 
+    <h2 id="title-secondary" class="titles background-green"> title secundario</h2>
+    <p>paragrafo</p>
+</body>
+</html>
