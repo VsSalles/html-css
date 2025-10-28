@@ -1,0 +1,53 @@
+<!--
+    quando estamos trabalhando com html e css, podemos dizer que
+    estamos trabalhando com caixas, quadrados ou retangulos
+
+    box model: Em CSS, o termo "modelo de caixa" é usado quando se fala em web design e layout.
+        O modelo de caixa CSS é essencialmente uma caixa que envolve todos os elementos HTML.
+        Cada caixa consiste em quatro partes: conteúdo, preenchimento (padding), bordas e margens.
+    Explicação das diferentes partes (da parte mais interna à parte mais externa):
+        Conteúdo - O conteúdo da caixa, onde o texto e as imagens aparecem
+        Preenchimento - Limpa uma área ao redor do conteúdo. O preenchimento é transparente
+        Borda - Uma borda que contorna o preenchimento e o conteúdo
+        Margem - Limpa uma área fora da borda. A margem é transparente
+
+    O conteudo é formadao pela altura e largura do elemento, quando não expecifcamos, o navegador
+        configura como bloco e bloco ocupa toda a largura disponviel na tela.
+-->
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .section-one, .section-two {
+            box-sizing: border-box;
+        }
+        .section-one {
+            background: purple;
+            width: 200px;
+            border: 5px solid black;
+            padding: 10px;
+            margin: 20px;
+        }
+        .section-two {
+            background: yellow;
+            width: 200px;
+            border: 5px solid black;
+            padding: 10px;
+            margin: 20px;
+        }
+    </style>
+</head>
+<body>
+    <section class="section-one">
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vel, ipsa molestiae? Molestias libero repellendus illo alias, molestiae hic deleniti a eum magni recusandae accusamus corrupti quae assumenda. Adipisci, nihil autem.
+    </section>
+    <section class="section-two">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis deserunt beatae cumque excepturi magnam. Quas, sunt culpa. Doloremque debitis, id quae, qui ratione omnis error velit fuga, cupiditate dolorum necessitatibus?
+    </section>
+    
+</body>
+</html>
