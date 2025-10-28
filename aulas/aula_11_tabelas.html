@@ -1,0 +1,79 @@
+<!--
+    Tabelas são iguais planilhas do excel por exemplo, com linhas e colunas
+    table - tag da tabela
+    thead - cabeçalho da tabela tr - linha - td ou th - colunas
+    tbody - corpo da tabela
+    tfoot - rodape da tabela
+    caption - descrição da tabela
+    o atrbuto colspan da td, faz com que a coluna ocupe mais de um espaço
+    o atrbiuto rowspan da td, faz com que a linha ocupe mais de um espaço
+-->
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas</title>
+    <style>
+        table {
+            border-collapse: collapse;
+            width: 100%;
+        }
+        table td, table th {
+            border: 2px solid black;
+            padding: 5px;
+            text-align: left;
+        }
+        table caption {
+            text-align: left;
+            caption-side: top;
+            margin-bottom: 10px;
+        }
+        table tfoot td {
+            background-color: antiquewhite;
+            font-style: italic;            
+        }
+        .responsive-table{
+            max-width: 100%;
+            overflow-x: auto;
+        }
+    </style>
+</head>
+<body>
+    <div id="responsive-table">
+    <table>
+        <caption>descrição da tabela</caption>
+        <thead>
+            <tr>
+            <th>coluna 1</th>
+            <th>coluna 2</th>
+             <th>coluna 3</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>corpo 1 corpo 1 corpo 1 corpo 1 corp 1 corp 2</td>
+                <td>corpo 2</td>
+                <td>corpo 3</td>
+            </tr>
+            </tr>
+            <tr>
+                <td colspan="2" rowspan="2">ocupa 2 espaços</td>
+                <td>espaço 3</td>
+            </tr>
+            <tr>
+                <td>espaço 3</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td>corpo 1</td>
+                <td>corpo 2</td>
+                <td>corpo 3</td>
+            </tr>
+        </tfoot>
+    </table>
+    </div>
+</body>
+</html>
