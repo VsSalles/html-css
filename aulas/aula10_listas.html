@@ -1,0 +1,69 @@
+<!--
+    Listas são muito usadas para barras de navegação
+    ul - lista não ordenada, li - cada item da lista
+    ol - lista ordenada, por padrão numereica, mas pode ser alterada
+        usando o atributo type que pode receber uma letra, um numero romano...
+        li - cada item da lista
+    dl description lista, uma lista de termos e suas descrições
+    dt - o termo
+    dd - descrição
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Listas</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        nav {
+            background: rgb(195, 0, 255);
+        }
+        nav a {
+            text-decoration: none;
+            color: white;
+            font-family: monospace;
+            text-transform: uppercase;
+        }
+        nav a:hover{ 
+            background: black;
+            padding: 10px;
+        }
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: end;
+            margin-right: 10px;
+            padding: 10px;
+        }
+        nav li {
+            margin-left: 20px;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="#">Personagens</a></li>
+            <li><a href="#">Torneios</a></li>
+            <li><a href="#">Historias</a></li>
+        </ul>
+    </nav>
+    <ul>
+        <li>item</li>
+        <li>item</li>
+    </ul>
+    <ol type="15" start="20">
+        <li>item</li>
+        <li>item</li>
+    </ol>
+    <dl>
+        <dt>termo</dt>
+        <dd>descrição do termo</dd>
+    </dl>
+</body>
+</html>
