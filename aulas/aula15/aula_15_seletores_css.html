@@ -1,0 +1,49 @@
+<!--
+    * -> seleciona todos os elementos da pagina (é usado para "zerar" o css (margin, padding))
+    tag_name -> seleciona todas as tags especifca
+    tag_name_pai -> tag_name_filho -> seleciona uma tag especifca de acordo com a estrutura do html
+    os seletores podem ser combinados com virgula, exemplo: body div section p, body div section h1 {css...}
+    . -> seleciona os elementos que tem uma determinada classe
+    é possivel combinar classes de acordo com a estrutura do html exemplo: .global-font .cor-verde ou p.global-font div.cor-verde
+    # seleciona o elemento que tenha o id especifcado
+
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="t" id="f"></div>
+    <p></p>
+    <div>
+        <section>
+            <table></table>
+        </section>
+    </div>
+    <div class="cor-verde">
+        <p class="global-font">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Deserunt eligendi reprehenderit, expedita ducimus praesentium temporibus voluptate laudantium quidem ipsam eveniet assumenda aut, pariatur eum facilis. Esse illum veniam sequi impedit.<h1>title<a href="">link</a></h1></p>
+    </div>
+
+    <div class="pai">
+        <div class="filha">
+            <div class="filha da filha"></div>
+        </div>
+    </div>
+
+    <div class="mainpain">
+        <h1></h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit eveniet deserunt a tempore, quasi ipsa doloremque aperiam perferendis. Natus totam voluptatum doloremque officia corrupti mollitia illo voluptatem hic laboriosam perferendis.</p>
+        <h1>title</h1>
+        <p>skfnjf</p>
+        <p>djfnjkwj</p>
+        <h1>vai pegar tambem</h1>
+        <span></span>
+        <h1 meu-atributo="s">não vai pegar</h1>
+    </div>
+</body>
+</html>

@@ -1,0 +1,91 @@
+/*
+comentario
+*/
+#f {
+    width: 200px;
+    height: 200px;
+}
+
+.t {
+    background-color: aqua;
+}
+
+div section table {
+    background-color: green;
+    width: 200px;
+    height: 200px;
+}
+
+div section {
+    margin-top: 90px;
+}
+
+div p,
+div h1,
+div a {
+    text-align: center;
+    color: red;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    padding: 5px;
+    text-decoration: None;
+}
+
+.cor-verde {
+    background-color: greenyellow;
+}
+
+.cor-verde .global-font {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 10px;
+}
+
+div.cor-verde p.global-font {
+    font-weight: bold;
+    margin-top: 20px;
+}
+/*
+todos os elementos que tem uma classe pai e dentro dele tem uma classe filha, exatamente.
+*/
+.pai > .filha{
+    background-color: rgb(0, 0, 0);
+    width: 200px;
+    height: 200px;
+}
+/*
+todos os h1 que antes tem um p
+*/
+.mainpain p+h1 {
+    color: blue;
+}
+/*
+todos os p que antes tem um h1
+*/
+.mainpain h1+p {
+    color: yellow;
+}
+/*
+todos os p, depois do h1
+*/
+.mainpain h1~p {
+    color: aqua;
+}
+
+[meu-atributo] {
+    background-color: chocolate;
+}
+
+[meu-atributo="s"] {
+    background-color: chocolate;
+}
+
+[meu-atributo^="comecacom"] {
+    background-color: chocolate;
+}
+
+[meu-atributo$="terminacom"] {
+    background-color: chocolate;
+}
+
+[meu-atributo*="contem"] {
+    background-color: chocolate;
+}
