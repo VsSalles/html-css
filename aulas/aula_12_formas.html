@@ -1,0 +1,61 @@
+<!--
+
+-->
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+    <style>
+        label {
+            cursor: pointer;
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <form action="#" method="get" target="_blank">
+        <label for="nome">Nome</label>
+        <input type="text" name="nome" required id="nome">
+        <label for="dev">Sou um dev?</label>
+        <input type="checkbox" name="dev" value="dev" checked>
+        <label for="genero">Feminino</label>
+        <input type="radio" name="genero" id="f" value="f">
+        <label for="masculino">Masculino</label>
+        <input type="radio" name="genero" checked id="m" value="m">
+
+        <label for="data">Data</label>
+        <input type="date" id="data" name="data">
+        <br>
+        <label for="datetime">datetime</label>
+        <input type="datetime-local" name="datetime" value="2025-10-28T00:00">
+        <label for="time">time</label>
+        <input type="time" name="time">
+        <label for="cor">cor</label>
+        <input type="color" name="cor" value="#ff0000">
+        <label for="email">email</label>
+        <input type="email">
+        <label for="file">arquivo</label>
+        <input type="file" name="file" accept=".png, .svg, image/*" multiple>
+        <label for="number">numero</label>
+        <input type="number" name="numero" value="15" step="2" min="10" max="100">
+        <label for="password">senha</label>
+        <input type="password" name="password">
+        <label for="select">select</label>
+        <select name="select" id="select" multiple>
+            <optgroup label="DANO">
+            <option value="o1">opção 1</option>
+            <option value="o2">opção 2</option>
+            <option value="o3" selected>opção 3</option>
+            </optgroup>
+            <optgroup label="SUPORTE">
+            <option value="o4">opção 4</option>
+            <option value="o5">opção 5</option>
+            <option value="o6" selected>opção 6</option>
+            </optgroup>
+        </select>
+        <button type="submit">enviar</button>
+    </form>
+</body>
+</html>
