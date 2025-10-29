@@ -1,0 +1,43 @@
+
+p:hover {
+    color: red;
+    transition: all 1s ease-in-out;
+}
+
+input:focus {
+    border: 1px solid black;
+}
+
+input:enabled{
+    background-color: green;
+}
+
+input:disabled{
+    background-color: red;
+}
+
+a:visited{
+    color: brown;
+}
+
+p {
+    color: blue;
+}
+
+p:not(.meio){
+    color: greenyellow
+}
+
+li ul:nth-child(2) {
+    color: red;
+}
+
+li ul:nth-child(even) {
+    color: green;
+}
+li ul:nth-child(odd) {
+    color: yellow;
+}
+li ul:nth-child(2n) {
+    background-color: yellow;
+}
