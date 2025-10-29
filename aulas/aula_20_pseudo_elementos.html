@@ -1,0 +1,57 @@
+<!--
+    pseudos elementos são elementos que podemos colocar antes ou depois de algum elemento na pagina
+    ::after coloca um pseudo elemento depois de um elemento
+    ::before coloca um pseudo elemento antes de um elemento
+    ::first-letter aplica um estilo a primeira letra
+    ::first-line aplica um estilo na primeira linha 
+    ::selection aplica um estilo no que estiver selecionado 
+    ::placeholder aplica um estilo ao placeholder
+-->
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        ul li::after {
+            content: ' - ';
+            color: red;
+        }
+        ul li::before {
+            content: ' - ';
+            color: red;
+        }
+        p::first-letter {
+            font-size: 60px;
+            color: red;
+        }
+        p::first-line {
+            color: blue;
+        }
+        p::selection {
+            background-color: rgb(255, 91, 91);
+            color: aqua;
+        }
+        ::placeholder{
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            color: rgb(16, 255, 255);
+        }
+    </style>
+</head>
+<body>
+    <ul><li>item</li>
+    <li>item</li>
+    <li>item</li>
+    <li>item</li>
+    <li>item</li>
+    <li>item</li>
+    <li>item</li>
+    <li>item</li>
+    <li>item</li>
+    <li>item</li></ul>
+    <input type="text" placeholder="....">
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum, ad. Suscipit a nam distinctio vel id officia rerum nostrum velit magni exercitationem dolor et, voluptatibus voluptate necessitatibus ducimus voluptas repudiandae.</p>
+</body>
+</html>
