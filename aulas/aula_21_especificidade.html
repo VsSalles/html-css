@@ -1,0 +1,31 @@
+<!--
+    especificidade, qual regra css sera aplicada indepente da ordem
+    quando a especificidade é a mesma sera aplica a ultima.
+
+    primeiro ID > classes, > atributos > pseudo classes > elementos > pseudo elementos   
+    selector_specificy (number, number, number) o maior sera aplicado
+    a tag style inline no html sempre é aplicada
+    !important vai forçar o navegador a aplciar o estilo 
+-->
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #p {
+            color: red;
+        }
+        #p.p{
+            color: gold;
+        }
+        p #p::after{
+            color: aqua;
+        }
+    </style>
+</head>
+<body>
+    <p class="p" id="p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia, libero beatae provident dolores repudiandae eaque sequi accusamus illo quam adipisci harum accusantium exercitationem quod debitis perferendis corrupti? Eaque, sapiente quibusdam?</p>
+</body>
+</html>
