@@ -1,0 +1,57 @@
+<!--
+    antigamente a forma de fazer um elemento que o display é bloco ficar ao lado de outro elemento
+        era ultilizando float, que faz uma flutuação, faz com que o elemento ocupe o espaço dele e 
+        libere espaço para outros elementos.
+    clear "limpa o elemento"
+-->
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        .grid {
+            padding: 15px;
+        }
+        .grid::after {
+            content: '';
+            display: block;
+            clear: both;
+        }
+        .grid .col{
+            box-sizing: border-box;
+            padding: 15px;
+            width: 33.33%;
+            height: 200px;
+            float: left;
+        }
+        .grid .col-content{
+            background-color: aqua;
+            width: 100%;
+            height: 100%;
+        }
+    </style>
+</head>
+<body>
+    <div class="grid">
+        <div class="col">
+            <div class="col-content">conteudo</div>
+        </div>
+       <div class="col">
+            <div class="col-content">conteudo</div>
+        </div>
+        <div class="col">
+            <div class="col-content">conteudo</div>
+        </div>
+        <div class="col">
+            <div class="col-content">conteudo</div>
+        </div>
+    </div>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ea doloribus, repellendus earum beatae magnam culpa natus quaerat atque autem nam quia, delectus et omnis deleniti vitae perferendis praesentium excepturi facere?</p>
+</body>
+</html>
