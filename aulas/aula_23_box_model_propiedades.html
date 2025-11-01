@@ -1,0 +1,59 @@
+<!--
+   divs tem o comportamento display block, a propiedade display inline não pega tamanho nem largura.
+   largura (width) esta relacionada ao conteudo.
+   overflow, é a propiedade que defini como um elemento sera tratado ao ultrapssar o tamnho disponivel, possiveis valores:
+   hidden - o que passar sera escondido
+   overfloy-y - eixo vertical - scroll - barra de rolagem porem ela sempre aparece
+   auto - barra de rolagem visivel apenas se o conteudo ultrapassar
+   max-width - controla a largura maxima de um conteudo, muito util para responsividade e por exemplo quando o site é acessado por uma tela muito grande e não queremos que um conteudo fique muito grande
+   margin auto a esquerda e a direita faz com que o conteudo se ajuste sempre no meio da tela 
+   max_height - mesma ideia do max-with mas para altura
+   toda configuração de borda vem por padrão o box-sizing como content-box, que faz com que margin, padding e border sejam somadas a largura e altura
+   padding-box, faz com que o padding seja aplicado para dentro e a margin e borda continua para fora 
+   border-box, faz com que o padding e a borda use tambem o tamnho da largura e altura
+   margin sempre sera para fora do conteudo
+   -->
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            margin: 0;
+            padding: 0;
+        }
+        .texto{
+            display: block;
+            max-width: 800px;
+            width: 300px;
+            max-height: 100px;
+            min-height: 100px;
+            margin: 0 auto 15px auto; 
+            background-color: red;
+            overflow: auto;
+            padding: 50px;
+            border: 5px solid black;
+        }
+        .box{
+            box-sizing: border-box;
+            width: 300px;
+            margin: 0 auto;
+            padding: 20px;
+            border: 5px solid;
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="texto">
+        <h1>title</h1>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aspernatur saepe aut dolorem perferendis provident atque earum veniam molestias, deserunt placeat animi neque itaque omnis? Optio ex architecto nisi exercitationem et?Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsum totam nesciunt, laudantium sequi in officia voluptate sed perferendis adipisci voluptatibus molestias nostrum maiores amet, voluptas incidunt, explicabo eligendi! Iure, blanditiis.</p>
+    </div>
+    <div class="box">
+        <h1>title</h1>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aspernatur saepe aut dolorem perferendis provident atque earum veniam molestias, deserunt placeat animi neque itaque omnis? Optio ex architecto nisi exercitationem et?Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsum totam nesciunt, laudantium sequi in officia voluptate sed perferendis adipisci voluptatibus molestias nostrum maiores amet, voluptas incidunt, explicabo eligendi! Iure, blanditiis.</p>
+    </div>
+</body>
+</html>
